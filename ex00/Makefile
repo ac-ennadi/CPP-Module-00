@@ -1,9 +1,9 @@
 CC = c++
  CFlAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = megaphone.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = My_Program
+NAME = megaphone
 
 all : $(NAME)
 
@@ -20,3 +20,5 @@ fclean : clean
 	rm -rf $(NAME)
 
 re : fclean all
+
+#add secondery don't f
