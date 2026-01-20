@@ -1,9 +1,9 @@
 CC = c++
- CFlAGS = -Wall -Wextra -Werror -std=c++98
+CFlAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = megaphone.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = megaphone
+NAME = PhoneBook
 
 all : $(NAME)
 
