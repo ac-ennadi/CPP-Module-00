@@ -2,16 +2,14 @@
 
 PhoneBook::PhoneBook()
 {
-    next = 1;
+    next = 0;
     count = 0;
 };
 
 void PhoneBook::add(const Contact &Contact)
 {
-    while (count < 8)
-    {
-
-        next++;
+    contacts[next] = Contact;
+    next = (next + 1) % 8;
+    if (count < 8)
         count++;
-    }
 }
