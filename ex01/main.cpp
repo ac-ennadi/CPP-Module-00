@@ -2,23 +2,23 @@
 
 int main()
 {
-    std::string cmds; 
-    std::cout << "enter commends {ADD, SEARCH, EXIT}." << std::endl;
-    std::getline(std::cin, cmds);
-    while (1)
+    std::string cmd;
+
+    while (true)
     {
-        if (cmds == "ADD")
-        {
+        std::cout << "Enter command (ADD, SEARCH, EXIT): ";
+        std::getline(std::cin, cmd);
 
-        }
-        if (cmds == "SEARCH")
+        if (cmd == "ADD")
         {
-
+            
         }
-        if (cmds == "EXIT")
+        else if (cmd == "SEARCH")
         {
-
+            
         }
+        else if (cmd == "EXIT")
+            break;
     }
-    return (0);
+    return 0;
 }

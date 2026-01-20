@@ -1,29 +1,24 @@
 #include "Contact.hpp"
 
-Contact::Contact() {}
+Contact::Contact() {};
 
-void Contact::set(
+void Contact::set (
     const std::string &fn,
     const std::string &ln,
-    const std::string &nn,
+    const std::string &nm,
     const std::string &pn,
     const std::string &ds
-)
-{
-    firstName = fn;
-    lastName = ln;
-    nickname = nn;
-    phoneNumber = pn;
-    darkestSecret = ds;
-}
+) {
+    FirstName = fn;
+    LastName = ln;
+    NickName = nm;
+    PhoneNumber = pn;
+    DarkSecret = ds;
+};
 
-std::string Contact::getFirstName() const { return firstName; }
-std::string Contact::getLastName() const { return lastName; }
-std::string Contact::getNickname() const { return nickname; }
-std::string Contact::getPhoneNumber() const { return phoneNumber; }
-std::string Contact::getDarkestSecret() const { return darkestSecret; }
+std::string Contact::GetFirstName () const {return (FirstName);}
+std::string Contact::GetLastName () const {return (LastName);}
+std::string Contact::GetNickName () const {return (NickName);}
+std::string Contact::GetPhoneNumber () const {return (PhoneNumber);}
+std::string Contact::GetDarkSecret () const {return (DarkSecret);}
 
-bool Contact::isEmpty() const
-{
-    return firstName.empty();
-}
