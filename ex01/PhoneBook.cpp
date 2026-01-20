@@ -1,10 +1,17 @@
 #include "PhoneBook.hpp"
 
-PhoneBook::PhoneBook() {};
+PhoneBook::PhoneBook()
+{
+    next = 1;
+    count = 0;
+};
 
 void PhoneBook::add(const Contact &Contact)
 {
-    PhoneBook::next = 1;
-    PhoneBook::count = 0;
-    
+    while (count < 8)
+    {
+
+        next++;
+        count++;
+    }
 }
