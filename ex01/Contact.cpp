@@ -22,3 +22,7 @@ std::string Contact::GetNickName () const {return (NickName);}
 std::string Contact::GetPhoneNumber () const {return (PhoneNumber);}
 std::string Contact::GetDarkSecret () const {return (DarkSecret);}
 
+bool Contact::isEmpty() const
+{
+    return (GetFirstName().empty());
+};
