@@ -23,15 +23,13 @@ static std::string formatField(const std::string &str)
 
 void PhoneBook::drawList() const
 {
-int i = 0;
+    int i = 0;
 
-    // header
     std::cout << std::setw(10) << "Index" << " | "
               << std::setw(10) << "First Name" << " | "
               << std::setw(10) << "Last Name" << " | "
               << std::setw(10) << "Nickname" << std::endl;
 
-    // rows
     while (i < count)
     {
         std::cout << std::setw(10) << i << " | "

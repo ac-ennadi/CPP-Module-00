@@ -21,4 +21,4 @@ fclean : clean
 
 re : fclean all
 
-#add secondery don't forget it
+.SECONDARY: $(OBJ)
